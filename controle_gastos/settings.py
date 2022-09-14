@@ -76,8 +76,14 @@ WSGI_APPLICATION = 'controle_gastos.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+ #       'ENGINE': 'django.db.backends.sqlite3',
+ #       'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':  BASE_DIR / 'd2ge4ffp1qk0ug',
+        'USER': 'edzylawtocrnus',
+        'PASSWORD': '37d2640663ab657d26f5bd84c76fda374f8414b135e2be9517b9e101a7b0c62b',
+        'HOST': 'ec2-35-168-122-84.compute-1.amazonaws.com',
+        'PORT': '5432',
     } 
 }
 

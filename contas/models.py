@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class Departments(models.Model):
+    dept_no = models.CharField(primary_key=True, max_length=4)
+    dept_name = models.CharField(unique=True, max_length=40)
